@@ -1,0 +1,47 @@
+{
+  "name": "trend-cast",
+  "version": "1.0.0",
+  "description": "TrendCast - 株価予測システム",
+  "private": true,
+  "workspaces": [
+    "src/client",
+    "src/server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm run dev --workspace=src/server",
+    "dev:client": "npm run dev --workspace=src/client",
+    "build": "npm run build --workspace=src/server && npm run build --workspace=src/client",
+    "build:server": "npm run build --workspace=src/server",
+    "build:client": "npm run build --workspace=src/client",
+    "start": "concurrently \"npm run start --workspace=src/server\" \"npm run start --workspace=src/client\"",
+    "start:server": "npm run start --workspace=src/server",
+    "start:client": "npm run start --workspace=src/client",
+    "test": "npm run test --workspace=src/server && npm run test --workspace=src/client",
+    "test:server": "npm run test --workspace=src/server",
+    "test:client": "npm run test --workspace=src/client",
+    "lint": "npm run lint --workspace=src/server && npm run lint --workspace=src/client",
+    "lint:fix": "npm run lint:fix --workspace=src/server && npm run lint:fix --workspace=src/client",
+    "type-check": "npm run type-check --workspace=src/server && npm run type-check --workspace=src/client",
+    "clean": "npm run clean --workspace=src/server && npm run clean --workspace=src/client",
+    "jquants:auth": "node scripts/jquants-auth.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "株価予測",
+    "テクニカル分析",
+    "AI",
+    "OpenAI",
+    "J-Quants",
+    "Next.js",
+    "Express"
+  ],
+  "author": "",
+  "license": "MIT"
+}

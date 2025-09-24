@@ -137,3 +137,49 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# TrendCast specific ignores
+# Build outputs
+src/client/.next/
+src/client/out/
+src/server/dist/
+src/server/build/
+
+# Development files
+src/client/.env.local
+src/server/.env
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+test-results/
+test-reports/
+playwright-report/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# API keys and credentials
+keys/
+secrets/
+
+# Analysis reports
+docs/analysis-report.md

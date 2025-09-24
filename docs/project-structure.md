@@ -105,7 +105,7 @@ trend_cast/
 │
 │
 ├── public/                        # 静的ファイル（Next.js用）
-│   └── favicon.ico
+│   └── favicon.ico                # ファビコン（T003で適切なファイルに差し替え）
 │
 ├── scripts/                       # 開発用スクリプト
 │   ├── dev.sh                    # 開発サーバー起動
